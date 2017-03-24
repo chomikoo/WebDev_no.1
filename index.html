@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    
+<!--  META  -->
+    <meta charset="utf-8">
+    <meta name="vievport" content="width-device-width, initial-scale=1">
+<!--    TITLE   -->
+    <title>Forms WebDevChallenge no.1</title>
+
+<!--   STYLES  -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&amp;subset=latin-ext" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo">
+    </header>
+    <main class="container">
+        <div class="col">
+
+            <!--------------==========REGISTER FORM==============------------>
+
+            <section>
+                <h2>Register Form</h2>
+
+                <form>
+                    <fieldset>
+                        <div class="form-input">
+                            <img src="img/username.png" alt="username">
+                            <input type="text" name="username" placeholder="Username" required>
+                        </div>
+
+
+                        <div class="form-input">
+                            <img src="img/password.png" alt="password">
+                            <input type="password" name="password" placeholder="Password" required>
+                        </div>
+
+                        <div class="form-input">
+                            <img src="img/password.png" alt="confirm password">
+                            <input type="password" name="password" placeholder="Confirm Password" required>
+                        </div>
+
+                        <div class="form-input">
+                            <img src="img/email.png" alt="email">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-input">
+                            <img src="img/location.png" alt="location" >
+                            <select name="location" required>
+                                <option value>Your location</option>
+                                <option value="1">Location 1</option>
+                                <option value="2">Location 2</option>
+                                <option value="3">Location 3</option>
+                                <option value="4">Location 4</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="field-wrap">
+                            <input type="checkbox" name="terms" id="terms" value="true" hidden required>
+                            <label for="terms">
+                                <span></span>
+                                I have read and accept the terms of use.
+                            </label>
+                        </div>
+
+                        <button class="btn btn-block" type="submit">Sing Up</button>
+                    </fieldset>
+                </form>
+
+            </section>
+
+            <!--------------==========SEND EMAIL==============------------>
+
+
+            <section>
+
+                <h2>Send Email</h2>
+
+                <form>
+                    <fieldset>
+                        <div class="form-input">
+                            <img src="img/username.png" alt="username">
+                            <input type="text" name="Username" placeholder="Your name" required>
+                        </div>
+                        <div class="form-input">
+                            <img src="img/email.png" alt="email">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-input">
+                            <textarea name="message" rows="10" cols="30" placeholder="Type your message..." required></textarea>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="checkbox" name="terms" id="terms_semail" value="true" hidden required>
+                            <label for="terms_semail">
+                                <span></span>
+                                Send a copy to my Email
+                            </label>
+                        </div>
+
+                        <button class="btn btn-block" type="submit">Send Email</button>
+                    </fieldset>
+                </form>
+
+            </section>
+        </div>
+
+
+        <div class="col col-offset-1">
+
+            <!--------------==========SING IN FORM==============------------>
+
+
+            <section>
+                <h2>Sing In Form</h2>
+                <form>
+                    <fieldset>
+                        <div class="form-input">
+                            <img src="img/username.png" alt="username">
+                            <input type="text" name="Username" placeholder="Username" required>
+                        </div>
+                        <div class="form-input">
+                            <img src="img/password.png" alt="password">
+                            <input type="password" name="sing-up-pass" placeholder="Password" required>
+                        </div>
+                        <div class="btn-group">
+                            <div class="field-wrap">
+                                <input type="checkbox" name="terms" id="terms_singin" value="true" hidden required>
+                                <label for="terms_singin">
+                                    <span></span>
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <button class="btn btn-block" type="submit">Sing in</button>
+                            
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+
+            <!--------------==========RECOVER FORM==============------------>
+
+
+            <section>
+                <h2>Recover Form</h2>
+
+                <form>
+                    <fieldset>
+                        <div class="form-input">
+                            <img src="img/email.png" alt="email">
+                            <input type="email" name="Email" placeholder="Enter your Email" required>
+                        </div>
+
+                        <div class="form-input">
+                            <img src="img/phone.png" alt="phone">
+                            <input type="tel" name="Tel" placeholder="Enter your Phone number" required>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-block" type="submit">Send</button>
+                            <button class="btn btn-block btn-disabled" type="submit" disabled>Done</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <!--------------==========SUBSCRIBE FORM==============------------>
+
+
+            <section>
+                <h2>Subscribe Form</h2>
+                <form>
+                    <fieldset>
+                        <div class="form-input">
+                            <img src="img/email.png" alt="email">
+                            <input type="email" name="email" placeholder="Enter your Email" required>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-block" type="submit">Subscribe</button>
+                            <button class="btn btn-block btn-red" type="submit">No, Thanks</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <div class="logo">
+                <img src="img/logo_bottom.png" alt="logo bottom">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
