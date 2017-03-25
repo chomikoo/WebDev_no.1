@@ -6,48 +6,51 @@
     padding: 0;
 }
 
+
+
+
 body {
     background-image: url(img/bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    width: 100%;
-    height: 100%;
     font-family: 'Titanium Web', sans-serif;
-    text-align: center;
+    height: 100%;
     padding: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 header img {
-    box-shadow: inset 0px -10px 60px -45px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 -10px 60px -45px rgba(0, 0, 0, 0.8);
     margin: 50px auto -3px auto;
     opacity: 0.4;
     
 }
 
 .container {
-    width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    width: 100%;
 }
 
 h2 {
-    font-size: 32px;
     color: #fff;
+    font-size: 32px;
+    font-weight: 100;
     text-shadow: 1px 2px 2px #291818;
     text-align: center;
+    margin-top: 15px;
     padding: 20px;
-    font-weight: 100;
-    margin-top: 15px
 }
 
 form {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     display: block;
-    padding: 20px;
     height: 100%;
+    padding: 20px;
 }
 
 fieldset {
@@ -63,7 +66,7 @@ fieldset {
 .form-input {
     border: 1px solid #c6c6c6;
     border-radius: 5px;
-    box-shadow: inset 0px -10px 60px -45px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 -10px 60px -45px rgba(0, 0, 0, 0.8);
     margin-bottom: 20px;
     position: relative;
     width: 100%;
@@ -73,6 +76,7 @@ fieldset {
     border-right: 1px solid #c6c6c6;
     float: left;
     margin-top: 6px;
+    max-width: 70px;
     padding: 2px 20px;
     position: relative;
     width: 19%;
@@ -89,17 +93,17 @@ fieldset {
     padding-left: 20px;
     width: 80%;
 }
+input:focus,
 select:focus,
-textarea:focus,
-input:focus {
-    outline: none;
+textarea:focus {
     border: 3px solid #a0e047;
     box-shadow: 0 0 10px #b1e54d;
+    outline: none;
 }
 .form-input > select {
-    background-image: url(img/arrow.png);
-    background-position: right 20px center;
-    background-repeat: no-repeat;
+    background: url(img/arrow.png) no-repeat 97% center; /* default, Android, Sf < 6 */
+    background-position: -webkit-calc(100% - 10px) center; /* Sf 6 */
+    background-position: right 10px center; /* Cr 25+, FF 13+, IE 9+, Op 10.5+ */
     /* remove default arrow*/
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -109,23 +113,20 @@ input:focus {
 
 
 /* CHECKBOX */
-
 .field-wrap {
-    width: 100%;
     margin-bottom: 15px;
     text-align: left;
+    width: 100%;
 }
-
 .field-wrap label {
+    cursor: pointer;
     font-size: 16px;
     height: auto;
-    cursor: pointer;
+    line-height: 1.5;
+    margin-top: 5px;
     user-select: none;
     -webkit-user-select: none;
-    margin-top: 5px;
-    line-height: 1.5;
 }
-
 .field-wrap label span {
     border: 1px solid #999999;
     border-radius: 4px;
@@ -133,28 +134,38 @@ input:focus {
     height: 20px;
     margin-bottom: -4px;
     margin-right: 10px;
-    width: 20px;
     max-width: 20%;
     position: relative;
+    width: 20px;
 }
-
 .field-wrap input:checked ~ label > span:before {
     content: '';
-    background-image: linear-gradient(to top, #7fc41f, #a3d740);
-    background-image: -webkit-linear-gradient(to top, #7fc41f, #a3d740);
+    background: #d2ff52;
+    background: -moz-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #d2ff52), color-stop(100%, #a3d740));
+    background: -webkit-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -o-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -ms-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: linear-gradient(to bottom, #d2ff52 0%, #a3d740 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#a3d740', GradientType=0 );
     border-radius: 3px;
-    width: 12px;
     height: 12px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    width: 12px;
 }
-
 /* BUTTONS */
 .btn {
-    background-image: linear-gradient(to top, #7fc41f, #a3d740);
-    background-image: -webkit-linear-gradient(to top, #7fc41f, #a3d740);
+    background: #d2ff52;
+    background: -moz-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #d2ff52), color-stop(100%, #a3d740));
+    background: -webkit-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -o-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -ms-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: linear-gradient(to bottom, #d2ff52 0%, #a3d740 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#a3d740', GradientType=0 );
     border-radius: 3px;
     border: 1px solid #338400;
     box-shadow: 1px 1px #fff, inset 1px 1px 1px rgba(255, 255, 255, .41);
@@ -165,71 +176,76 @@ input:focus {
     height: 50px;
     width: 100%;
 }
-
 .btn-group {
-    width: 100%;
+    align-items: baseline;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
+    width: 100%;
 }
 
 .btn-red {
     border: 1px solid #a2202a;
-    background-image: linear-gradient(to top, #f03848, #f65e6f);
-    background-image: -webkit-linear-gradient(to top, #f03848, #f65e6f);
+    background: #f03848;
+    background: -moz-linear-gradient(top, #f03848 0%, #f65e6f 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f03848), color-stop(100%, #f65e6f));
+    background: -webkit-linear-gradient(top, #f03848 0%, #f65e6f 100%);
+    background: -o-linear-gradient(top, #f03848 0%, #f65e6f 100%);
+    background: -ms-linear-gradient(top, #f03848 0%, #f65e6f 100%);
+    background: linear-gradient(to bottom, #f03848 0%, #f65e6f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f03848', endColorstr='#f65e6f', GradientType=0 );
 }
 .btn-disabled {
-    cursor: not-allowed;
     border: 1px solid #96cc75;
-    background-image: linear-gradient(to top, #add284, #c6e0a5);
-    background-image: -webkit-linear-gradient(to top, #add284, #c6e0a5);
+    background: #96cc75;
+    background: -moz-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #d2ff52), color-stop(100%, #a3d740));
+    background: -webkit-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -o-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: -ms-linear-gradient(top, #d2ff52 0%, #a3d740 100%);
+    background: linear-gradient(to bottom, #d2ff52 0%, #a3d740 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#a3d740', GradientType=0 );
+    cursor: not-allowed;
 }
 .btn-group button,
 .btn-group div {
     width: 43%;
 }
 textarea {
-    color: #999999;
-    width: 100%;
-    height: 100%;
     border: none;
     border-radius: 5px;
     box-shadow: inset 0px -20px 43px -40px rgba(0,0,0,0.75);
-    resize: none;
+    color: #999999;
     font-family: 'Titanium Web', sans-serif;
     font-size: 16px;
-
-    padding: 25px;
+    height: 100%;
     overflow: hidden;
+    padding: 25px;
+    resize: none;
+    width: 100%;
 }
 .logo {
     margin-top: 50px;
-    opacity: 0.2;
     margin-bottom: 80px;
+    opacity: 0.2;
 }
 .logo > img {
     display: block;
-    margin: 0 auto;
-    width: 100%;
     height: auto;
+    margin: 0 auto;
+    width: 80%;
 }
 /* GRID*/
-
 .col-offset-1 {
     margin-left: 12%;
 }
-
 .col {
     width: 44%;
     float: left;
 }
-
 /*MEDIA QUERIES */
-
 @media (max-width: 940px) {
-
     .col-offset-1 { 
         margin-left: 5%;
     }
@@ -243,16 +259,15 @@ textarea {
 }
 @media (max-width: 860px){
     .col-offset-1 {
-        margin-left: 0%;
+        margin-left: 0;
     }
     .col {
         width: 100%;
     }
-    
 }
 @media (max-width: 460px) {
     body {
-       padding: 0px; 
+       padding: 0; 
     }
     header >img {
         width: 100%;
@@ -274,5 +289,4 @@ textarea {
         width: 100%;
         margin-bottom: 5px;
     }
-
 }
