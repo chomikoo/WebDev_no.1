@@ -141,6 +141,7 @@ input:focus {
 .field-wrap input:checked ~ label > span:before {
     content: '';
     background-image: linear-gradient(to top, #7fc41f, #a3d740);
+    background-image: -webkit-linear-gradient(to top, #7fc41f, #a3d740);
     border-radius: 3px;
     width: 12px;
     height: 12px;
@@ -153,6 +154,7 @@ input:focus {
 /* BUTTONS */
 .btn {
     background-image: linear-gradient(to top, #7fc41f, #a3d740);
+    background-image: -webkit-linear-gradient(to top, #7fc41f, #a3d740);
     border-radius: 3px;
     border: 1px solid #338400;
     box-shadow: 1px 1px #fff, inset 1px 1px 1px rgba(255, 255, 255, .41);
@@ -176,11 +178,13 @@ input:focus {
 .btn-red {
     border: 1px solid #a2202a;
     background-image: linear-gradient(to top, #f03848, #f65e6f);
+    background-image: -webkit-linear-gradient(to top, #f03848, #f65e6f);
 }
 .btn-disabled {
     cursor: not-allowed;
     border: 1px solid #96cc75;
     background-image: linear-gradient(to top, #add284, #c6e0a5);
+    background-image: -webkit-linear-gradient(to top, #add284, #c6e0a5);
 }
 .btn-group button,
 .btn-group div {
