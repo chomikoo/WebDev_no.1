@@ -91,7 +91,7 @@ fieldset {
     font-size: 16px;
     height: 40px;
     padding-left: 20px;
-    width: 80%;
+    width: 81%;
 }
 input:focus,
 select:focus,
@@ -125,7 +125,7 @@ textarea:focus {
     line-height: 1.5;
     margin-top: 5px;
     user-select: none;
-    -webkit-user-select: none;
+    -webkit-user-select: none;   
 }
 .field-wrap label span {
     border: 1px solid #999999;
@@ -207,6 +207,7 @@ textarea:focus {
     background: linear-gradient(to bottom, #d2ff52 0%, #a3d740 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#a3d740', GradientType=0 );
     cursor: not-allowed;
+    opacity: 0.7;
 }
 .btn-group button,
 .btn-group div {
